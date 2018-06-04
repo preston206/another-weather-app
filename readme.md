@@ -1,2 +1,4 @@
 
-### It's nothing new. Just another weather app. Check it out if you want.
+## It's nothing new. Just another weather app. Check it out if you want.
+
+### The Stack: HTML, CSS, JavaScript, Node, Express
