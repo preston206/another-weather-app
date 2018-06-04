@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Weather App</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+  <script src="/js/main.js"></script>
+</head>
+
+<body>
+  <main>
+
+    <div id="card">
+
+      <section id="form-container">
+        <form id="weather-form">
+          <button type="submit" onclick="getWeather(event)">
+            <i class="fas fa-search"></i>
+          </button>
+          <input type="text" name="city" id="city-input" placeholder="Where are you?" autofocus>
+          <button type="button" onclick="clearInput()">
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+      </section>
+
+      <section id="current-weather-container">
+        <div id="current-weather">
+
+          <div id="temp-container">
+            <span id="current-weather-temp"></span>
+          </div>
+          <div id="fahr-container">
+            <span id="current-weather-fahr"></span>
+          </div>
+          <div id="condition-humidity-container">
+            <span id="current-weather-condition"></span>
+            <br>
+            <span id="current-weather-humidity"></span>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="forecast-container">
+        <div id="forecast">
+          <div id="day-1" class="days border-right">
+            <span class="forecast-date" id="day-1-date"></span>
+            <br>
+            <span class="forecast-icon" id="day-1-icon"></span>
+            <br>
+            <span class="forecast-max" id="day-1-max"></span>
+            <br>
+            <span class="forecast-min" id="day-1-min"></span>
+          </div>
+          <div id="day-2" class="days border-right">
+            <span class="forecast-date" id="day-2-date"></span>
+            <br>
+            <span class="forecast-icon" id="day-2-icon"></span>
+            <br>
+            <span class="forecast-max" id="day-2-max"></span>
+            <br>
+            <span class="forecast-min" id="day-2-min"></span>
+          </div>
+          <div id="day-3" class="days border-right">
+            <span class="forecast-date" id="day-3-date"></span>
+            <br>
+            <span class="forecast-icon" id="day-3-icon"></span>
+            <br>
+            <span class="forecast-max" id="day-3-max"></span>
+            <br>
+            <span class="forecast-min" id="day-3-min"></span>
+          </div>
+          <div id="day-4" class="days border-right">
+            <span class="forecast-date" id="day-4-date"></span>
+            <br>
+            <span class="forecast-icon" id="day-4-icon"></span>
+            <br>
+            <span class="forecast-max" id="day-4-max"></span>
+            <br>
+            <span class="forecast-min" id="day-4-min"></span>
+          </div>
+          <div id="day-5" class="days">
+            <span class="forecast-date" id="day-5-date"></span>
+            <br>
+            <span class="forecast-icon" id="day-5-icon"></span>
+            <br>
+            <span class="forecast-max" id="day-5-max"></span>
+            <br>
+            <span class="forecast-min" id="day-5-min"></span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+</body>
+
+</html>
